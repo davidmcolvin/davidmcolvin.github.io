@@ -25,7 +25,16 @@ body {
 	background-color: #32e0c4;
 	padding: 10px;
 	border: 1px solid black;
-	font: "Lucida Sans Unicode", "Lucida Grande", sans-serif	
+	font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width: 100%;
+}
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logo-container {
+	text-align: center;
 }
 p{
 	text-align:center;
@@ -37,43 +46,4 @@ h2 {
 }
 a:link {
 	color: dodgerblue;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-a:visited {
-	color: lightgray: ;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-a:hover {
-	color: red;
-	background-color: transparent;
-	text-decoration: underline;
-}
-
-a:active {
-	color: yellow;
-	background-color: transparent;
-	text-decoration: underline;
-}
-.photo{
-	display: inline-block;
-	border: solid 1px black;
-	border-radius: 5px;
-	padding: 3px;
-	background:cornsilk;
-	margin: 5px;
-}
-/*#animation
-{
-	background-image:url(../img/Animation.png);
-	width: 300px;
-	height: 500px;
-}*/
-
-#animation:hover{background-position:-900px,0px;}
-.frame1 {background-position:0px,0px;}
-.frame2 {background-position:-300px,0px;}
-.frame3 {background-position:-600px,0px;}
+	background-color:

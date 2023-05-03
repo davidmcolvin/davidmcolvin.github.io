@@ -4,55 +4,47 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>DavidMColvin.com</title>
-		<link rel="stylesheet" href="css/style.css"	/>
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			var loaded = false;
 			loaded = !!window.jQuery;
-			if (loaded === false)
-			{
-				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>')
+			if (loaded === false) {
+				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>');
 			}
 		</script>
 	</head>
-	<!--<body onload="animate();">-->
 	<body>
 		<div class="page">
-			<div class="header">
-				<a href="index.html">
-					<img id="davidmcolvin" src="img/davidmcolvin.png">
-				</a>
-				<!--Navigation bar-->
-				<div id="nav-placeholder">
+			<header class="header">
+				<div class="container">
+					<div class="logo-container">
+						<a href="index.html">
+							<img id="davidmcolvin" src="img/davidmcolvin.png" alt="David M. Colvin">
+						</a>
+					</div>
+					<!--Navigation bar-->
+					<nav id="nav-placeholder"></nav>
 				</div>
-			</div>
-			<div class="content">
-				<h3>
-					<p>Welcome to my website.</p>
-				</h3>
+			</header>
+			<div class="container">
+				<main class="content">
+					<h1>Welcome to DavidMColvin.com</h1>
+					<p>
+						I am a <span class="highlight">full stack developer</span> with over <span class="highlight">10 years of experience</span>, specializing in property tax web applications. My expertise lies in the <span class="highlight">.NET stack</span>, where I have utilized various technologies to develop, optimize, and maintain web applications.
+					</p>
+					<p>
+						Feel free to explore my website to learn more about my work and the services I offer.
+					</p>
+				</main>
 			</div>
 		</div>
-		<!--<div class="frame1" id="animation"></div>-->
 		<script>
-			$(function(){
+			$(function () {
 				$("#nav-placeholder").load("nav.html");
 			});
-		</script>
-		<script>
-			/*var totalFrames = 3;
-			var currentFrame = 0;
-			function animate() {
-				var newFrame = currentFrame + 1;
-				//console.log(currentFrame);	
-				document.getElementById('animation').className = 'frame'+newFrame;
-				if (newFrame===3){
-					currentFrame = 0;
-				}
-				else {
-					currentFrame = newFrame;
-				}
-				setTimeout(function(){animate();},500);
-			}*/
 		</script>
 	</body>
 </html>
