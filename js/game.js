@@ -159,7 +159,11 @@ BubbleShoot.Game = (function($) {
 				setTimeout(function(){
 					bubble.setState(BubbleShoot.BubbleState.POPPED);
 				},200);
-				BubbleShoot.Sounds.play("mp3/pop.mp3",Math.random()*.5 + .5);
+				var checkedValue = $('#isSoundOn:checked').val();
+				if (checkedValue)
+				{
+					BubbleShoot.Sounds.play("mp3/pop.mp3",Math.random()*.5 + .5);
+				}
 			}, delay);
 			board.popBubbleAt(this.getRow(), this.getCol());
 			setTimeout(function(){
