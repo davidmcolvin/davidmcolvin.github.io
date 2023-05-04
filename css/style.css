@@ -38,9 +38,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-.logo-container {
-	text-align: center;
-}
 p {
 	text-align: left;
 	line-height: 1.5;
@@ -62,18 +59,6 @@ h1 {
 	position: relative;
 	text-align: center;
 }
-.logo-container a img {
-  transition: transform 0.3s;
-}
-
-.logo-container a:hover img {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.header-container {
-	width: 100%;
-}
 
 nav {
   display: flex;
@@ -93,4 +78,13 @@ nav a {
 
 nav a:hover {
   color: #0d7377;
+}
+
+#davidmcolvin {
+  transition: transform 0.3s;
+}
+
+#davidmcolvin:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
