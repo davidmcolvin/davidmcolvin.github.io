@@ -12,19 +12,19 @@ body
 	width: 1000px;
 	height: 738px;
 }
-#top_bar
-{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 1000px;
-	height: 70px;
-	background-color: #369;
-	color: #fff;
-	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
-	unselectable="on"
-	onselectstart="return false;" 
-	onmousedown="return false;
+#top_bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 70px;
+  background-color: #369;
+  color: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
 }
 .top_bar_box
 {
@@ -157,4 +157,5 @@ body
 	font-size: 36px;
 	color: #fff;
 }
+
 

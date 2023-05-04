@@ -59,3 +59,13 @@ h1 {
 	position: relative;
 	text-align: center;
 }
+.logo-container a img {
+  transition: transform 0.3s;
+}
+
+.logo-container a:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
