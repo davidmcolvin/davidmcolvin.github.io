@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Portfolio</title>
-		<link rel="stylesheet" href="css/style.css"	/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			var loaded = false;
-			loaded = !!window.jQuery;
-			if (loaded === false)
-			{
-				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>')
-			}
-		</script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="header">
-				<a href="index.html">
-					<img id="davidmcolvin" src="img/davidmcolvin.png">
-				</a>
-				<!--Navigation bar-->
-				<div id="nav-placeholder">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio — David M Colvin</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="top">
 
+	<header class="site-header">
+		<div class="site-nav">
+			<a href="index.html" class="nav-logo">
+				<span class="nav-badge">DC</span>
+				<span class="nav-name">David M Colvin</span>
+			</a>
+			<div id="nav-placeholder"></div>
+			<a href="contact.html" class="btn btn-primary">Get in touch</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="page-content">
+			<span class="section-label">02 / SELECTED WORK</span>
+			<h1 class="page-title">Portfolio</h1>
+			<p>You can find demos and fully completed projects on my <a href="https://github.com/davidmcolvin" target="_blank" rel="noopener noreferrer">GitHub</a>. A few highlights are below.</p>
+
+			<div class="project-grid">
+				<div class="project-card">
+					<h3>Bubble Shoot</h3>
+					<p>A bubble-shooting game built with HTML, CSS, and JavaScript, following the book <em>Building a Game with HTML, CSS, and JavaScript</em>.</p>
+					<div class="tags">
+						<span class="tag">HTML</span>
+						<span class="tag">CSS</span>
+						<span class="tag">JavaScript</span>
+					</div>
+					<br>
+					<a href="bubbleshoot.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size:13px; padding: 8px 14px;">Play the game →</a>
+				</div>
+
+				<div class="project-card">
+					<h3>Tournament Tracker</h3>
+					<p>A desktop application for managing tournament brackets, tracking players, and logging results. Built as a C# learning project.</p>
+					<div class="tags">
+						<span class="tag">C#</span>
+						<span class="tag">.NET</span>
+					</div>
+					<br>
+					<a href="https://github.com/davidmcolvin/TournamentTracker" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size:13px; padding: 8px 14px;">View on GitHub ↗</a>
+				</div>
+
+				<div class="project-card">
+					<h3>More on GitHub</h3>
+					<p>Additional projects, experiments, and open-source contributions are available on my GitHub profile.</p>
+					<div class="tags">
+						<span class="tag">Various</span>
+					</div>
+					<br>
+					<a href="https://github.com/davidmcolvin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size:13px; padding: 8px 14px;">Visit GitHub ↗</a>
 				</div>
 			</div>
-			<div class="content">
-				<h2>Portfolio</h2>
-				<p>Please visit my <a href="https://github.com/davidmcolvin" target="_blank" rel="noopener noreferrer">GitHub</a> for demos and fully completed projects.</p>
-				<p>This is a fun <a href="bubbleshoot.html" target="_blank" rel="noopener noreferrer">bubble shooting game</a> I made using a tutorial from the book <a href="http://buildanhtml5game.com/" target="_blank" rel="noopener noreferrer"><em>Building a Game with HTML, CSS, and JavaScript<em></a>
-				<p>Here is a video deomonstrating the <a href="https://github.com/davidmcolvin/TournamentTracker" target="_blank" rel="noopener noreferrer">Tournament Tracker</a> also on 
-						my <a href="https://github.com/davidmcolvin" target="_blank" rel="noopener noreferrer">GitHub.</a></p>
-				<video width="320" height="240" controls>
-					<source src="files/Tournament Tracker Demo Video.mp4" type="video/mp4">
-					Your browser does not support my video.
-				</video>
-			</div>
+
+			<h3>Tournament Tracker Demo</h3>
+			<video width="480" height="360" controls style="max-width:100%; border-radius:12px; border:1px solid var(--border); margin-top:8px;">
+				<source src="files/Tournament Tracker Demo Video.mp4" type="video/mp4">
+				Your browser does not support video playback.
+			</video>
 		</div>
-		<script>
-			$(function(){
-				$("#nav-placeholder").load("nav.html");
-			});
-		</script>
-	</body>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<div class="footer-logo">
+				<span class="footer-badge">DC</span>
+				<span>© 2025 David M Colvin</span>
+			</div>
+			<a href="#top" class="footer-back">back to top ↑</a>
+		</div>
+	</footer>
+
+	<script>
+		$(function() { $("#nav-placeholder").load("nav.html"); });
+	</script>
+</body>
 </html>

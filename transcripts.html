@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Transcripts</title>
-		<link rel="stylesheet" href="css/style.css"	/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			var loaded = false;
-			loaded = !!window.jQuery;
-			if (loaded === false)
-			{
-				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>')
-			}
-		</script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="header">
-			<a href="index.html">
-				<img id="davidmcolvin" src="img/davidmcolvin.png">
-			</a>
-			<!--Navigation bar-->
-			<div id="nav-placeholder">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transcripts — David M Colvin</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="top">
 
-			</div>
-			</div>
-			<div class="content">
-				<h2>Transcripts</h2>
-				<object data="files/FSUTranscripts.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
-			</div>
+	<header class="site-header">
+		<div class="site-nav">
+			<a href="index.html" class="nav-logo">
+				<span class="nav-badge">DC</span>
+				<span class="nav-name">David M Colvin</span>
+			</a>
+			<div id="nav-placeholder"></div>
+			<a href="contact.html" class="btn btn-primary">Get in touch</a>
 		</div>
-		<script>
-			$(function(){
-				$("#nav-placeholder").load("nav.html");
-			});
-		</script>
-	</body>
+	</header>
+
+	<main>
+		<div class="page-content">
+			<h1 class="page-title">Transcripts</h1>
+			<p>Academic transcripts from Ferris State University.</p>
+			<object data="files/FSUTranscripts.pdf" type="application/pdf" style="min-height:100vh; width:100%; border-radius:12px; border:1px solid var(--border);"></object>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<div class="footer-logo">
+				<span class="footer-badge">DC</span>
+				<span>© 2025 David M Colvin</span>
+			</div>
+			<a href="#top" class="footer-back">back to top ↑</a>
+		</div>
+	</footer>
+
+	<script>
+		$(function() { $("#nav-placeholder").load("nav.html"); });
+	</script>
+</body>
 </html>

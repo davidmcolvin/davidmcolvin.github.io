@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>About Me</title>
-		<link rel="stylesheet" href="css/style.css"	/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			var loaded = false;
-			loaded = !!window.jQuery;
-			if (loaded === false)
-			{
-				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>')
-			}
-		</script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="header">
-				<a href="index.html">
-					<img id="davidmcolvin" src="img/davidmcolvin.png">
-				</a>
-				<!--Navigation bar-->
-				<div id="nav-placeholder">
-				</div>
-			</div>
-			<div class="content">
-				<h2>About Me</h2>
-				<p>Hi there! I'm David, a full stack developer with a passion for coding and continuous learning. I was born in Michigan, and after spending some time in Illinois as a child, I returned to Michigan, where I've spent most of my life.</p>
-				
-				<h3>Education</h3>
-				<p>I attended Rockford High School and later pursued my interest in computers and technology at Grand Rapids Community College and Ferris State University. My studies have laid the foundation for my career as a developer, helping me acquire a deep understanding of various programming languages and software development methodologies.</p>
-				
-				<h3>Professional Experience</h3>
-				<p>Currently, I work at Harris Computer, where I contribute to the development of Aumentum, a property tax application. My primary focus is on assessment calculations, which involve tracking values and events related to people's homes. Besides this, I also take on various other tasks as needed. For a more detailed look at my professional experience, please check out my <a href="resume.html">résumé</a>.</p>
-				
-				<h3>Hobbies and Interests</h3>
-				<p>As a programmer, I love to stay updated on the latest trends in technology and constantly expand my knowledge. Outside of work, I maintain my Spanish language skills and keep my math prowess sharp. I also enjoy learning piano and make a point to exercise regularly, ensuring a healthy work-life balance.</p>
-				
-				<p>Thanks for stopping by and getting to know me better! Feel free to explore the rest of my website or <a href="contact.html">get in touch</a> if you'd like to connect or have any questions.</p>
-				
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About — David M Colvin</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="top">
+
+	<header class="site-header">
+		<div class="site-nav">
+			<a href="index.html" class="nav-logo">
+				<span class="nav-badge">DC</span>
+				<span class="nav-name">David M Colvin</span>
+			</a>
+			<div id="nav-placeholder"></div>
+			<a href="contact.html" class="btn btn-primary">Get in touch</a>
 		</div>
-		<script>
-			$(function(){
-				$("#nav-placeholder").load("nav.html");
-			});
-		</script>
-	</body>
+	</header>
+
+	<main>
+		<div class="page-content">
+			<h1 class="page-title">About Me</h1>
+
+			<p>Hi there! I'm David, a full-stack developer with a passion for coding and continuous learning. I was born in Michigan, and after spending some time in Illinois as a child, I returned to Michigan, where I've spent most of my life.</p>
+
+			<h3>Education</h3>
+			<p>I attended Rockford High School and later pursued my interest in computers and technology at Grand Rapids Community College and Ferris State University. My studies laid the foundation for my career as a developer, helping me build a deep understanding of programming languages and software development methodologies.</p>
+
+			<h3>Professional Experience</h3>
+			<p>Currently, I work at Harris Computer, where I contribute to the development of Aumentum, a property tax application. My primary focus is on assessment calculations — tracking values and events related to people's homes. For a more detailed look at my experience, check out my <a href="resume.html">résumé</a>.</p>
+
+			<h3>Hobbies &amp; Interests</h3>
+			<p>As a programmer, I love staying updated on the latest trends in technology and constantly expanding my knowledge. Outside of work, I maintain my Spanish language skills, keep my math sharp, enjoy learning piano, and make a point to exercise regularly.</p>
+
+			<p>Thanks for stopping by! Feel free to explore the rest of the site or <a href="contact.html">get in touch</a> if you'd like to connect.</p>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<div class="footer-logo">
+				<span class="footer-badge">DC</span>
+				<span>© 2025 David M Colvin</span>
+			</div>
+			<a href="#top" class="footer-back">back to top ↑</a>
+		</div>
+	</footer>
+
+	<script>
+		$(function() { $("#nav-placeholder").load("nav.html"); });
+	</script>
+</body>
 </html>

@@ -1,44 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>DavidMColvin.com</title>
-		<link rel="icon" type="image/png" href="img/favicon.png">
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			var loaded = false;
-			loaded = !!window.jQuery;
-			if (loaded === false) {
-				document.write('<script src="_js/jquery-3.5.1.min.js"><\/script>');
-			}
-		</script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="header">
-				<a href="index.html">
-					<img id="davidmcolvin" src="img/davidmcolvin.png">
-				</a>
-				<!--Navigation bar-->
-				<div id="nav-placeholder">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David M Colvin — Full-Stack Developer</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="top">
+
+	<header class="site-header">
+		<div class="site-nav">
+			<a href="index.html" class="nav-logo">
+				<span class="nav-badge">DC</span>
+				<span class="nav-name">David M Colvin</span>
+			</a>
+			<div id="nav-placeholder"></div>
+			<a href="contact.html" class="btn btn-primary">Get in touch</a>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- Hero -->
+		<section class="hero">
+			<div>
+				<div class="hero-badge">
+					<span class="hero-badge-dot"></span>
+					Full-Stack Developer
+				</div>
+				<h1>I build property tax web applications on the <span class="accent">.NET stack</span>.</h1>
+				<p class="hero-desc">
+					Full-stack developer with over a decade of experience designing, optimizing, and maintaining web applications — turning complex assessment and billing workflows into reliable, performant software.
+				</p>
+				<div class="hero-actions">
+					<a href="portfolio.html" class="btn btn-primary">View my work →</a>
+					<a href="https://github.com/davidmcolvin" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
+				</div>
+				<div class="hero-stats">
+					<div>
+						<div class="stat-value">10+</div>
+						<div class="stat-label">Years experience</div>
+					</div>
+					<div class="stat-divider"></div>
+					<div>
+						<div class="stat-value">.NET</div>
+						<div class="stat-label">Full-stack focus</div>
+					</div>
+					<div class="stat-divider"></div>
+					<div>
+						<div class="stat-value">Tax</div>
+						<div class="stat-label">Domain expert</div>
+					</div>
 				</div>
 			</div>
-			<div class="content">
-				<h2>Welcome To DavidMColvin.github.io</h2>
-					<p>
-						I am a <span class="highlight">full stack developer</span> with over <span class="highlight">10 years of experience</span>, specializing in property tax web applications. My expertise lies in the <span class="highlight">.NET stack</span>, where I have utilized various technologies to develop, optimize, and maintain web applications.
-					</p>
-					<p>
-						Feel free to explore my website to learn more about my work and the services I offer.
-					</p>
+			<div class="hero-photo">
+				<img src="img/NewProfilePic.png" alt="David M Colvin">
+				<div class="hero-photo-float">
+					<div class="hero-photo-float-label">Currently</div>
+					<div class="hero-photo-float-text">Building tax software</div>
 				</div>
 			</div>
-		<script>
-			$(function () {
-				$("#nav-placeholder").load("nav.html");
-			});
-		</script>
-	</body>
+		</section>
+
+		<!-- Expertise -->
+		<section class="expertise">
+			<div class="expertise-inner">
+				<span class="section-label">01 / EXPERTISE</span>
+				<h2 class="section-title">The stack I work in</h2>
+				<p class="section-desc">A decade of full-stack work across the Microsoft ecosystem — from database design through to the interfaces that assessors and the public rely on every day.</p>
+
+				<div class="skill-grid">
+					<div class="skill-card">
+						<div class="skill-card-label">{ } backend</div>
+						<h3>Backend &amp; APIs</h3>
+						<div class="tags">
+							<span class="tag">C#</span>
+							<span class="tag">ASP.NET Core</span>
+							<span class="tag">Web API</span>
+							<span class="tag">Entity Framework</span>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-card-label">&lt;/&gt; frontend</div>
+						<h3>Frontend</h3>
+						<div class="tags">
+							<span class="tag">JavaScript</span>
+							<span class="tag">TypeScript</span>
+							<span class="tag">Razor</span>
+							<span class="tag">HTML / CSS</span>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-card-label">[ ] data</div>
+						<h3>Data &amp; SQL</h3>
+						<div class="tags">
+							<span class="tag">SQL Server</span>
+							<span class="tag">T-SQL</span>
+							<span class="tag">Stored Procs</span>
+							<span class="tag">Optimization</span>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-card-label">~ devops</div>
+						<h3>Cloud &amp; DevOps</h3>
+						<div class="tags">
+							<span class="tag">Azure</span>
+							<span class="tag">CI / CD</span>
+							<span class="tag">Git</span>
+							<span class="tag">IIS</span>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-card-label">$ domain</div>
+						<h3>Property Tax Domain</h3>
+						<div class="tags">
+							<span class="tag">Assessment</span>
+							<span class="tag">Billing</span>
+							<span class="tag">Collections</span>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-card-label">* quality</div>
+						<h3>Quality &amp; Maintenance</h3>
+						<div class="tags">
+							<span class="tag">Performance</span>
+							<span class="tag">Refactoring</span>
+							<span class="tag">Legacy support</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<div class="footer-logo">
+				<span class="footer-badge">DC</span>
+				<span>© 2025 David M Colvin</span>
+			</div>
+			<a href="#top" class="footer-back">back to top ↑</a>
+		</div>
+	</footer>
+
+	<script>
+		$(function() { $("#nav-placeholder").load("nav.html"); });
+	</script>
+</body>
 </html>
